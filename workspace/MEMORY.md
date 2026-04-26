@@ -46,3 +46,8 @@ Also added a bootstrapper plist (`ai.openclaw.gateway.bootstrap`) at `~/Library/
 1. **Full Disk Access** — add `/Users/edgar/.nvm/versions/node/<version>/bin/node` in System Settings → Privacy & Security → Full Disk Access
 2. **Automation** — approve Messages.app control in System Settings → Privacy & Security → Automation (this may prompt interactively; approve it)
 After granting both, restart the gateway. Note: `imsg` is legacy — BlueBubbles is the recommended iMessage connector going forward.
+
+## Promoted From Short-Term Memory (2026-04-26)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-04-19.md:172:174 -->
+- - Candidate: Possible Lasting Truths: User: Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK. When reading HEARTBEAT.md, use workspace file /Users/edgar/.openclaw/workspace - confidence: 0.62 - evidence: memory/2026-04-18.md:242-244 [score=0.845 recalls=0 avg=0.620 source=memory/2026-04-19.md:18-20]
