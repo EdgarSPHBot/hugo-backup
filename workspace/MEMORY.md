@@ -51,3 +51,8 @@ After granting both, restart the gateway. Note: `imsg` is legacy — BlueBubbles
 
 <!-- openclaw-memory-promotion:memory:memory/2026-04-19.md:172:174 -->
 - - Candidate: Possible Lasting Truths: User: Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK. When reading HEARTBEAT.md, use workspace file /Users/edgar/.openclaw/workspace - confidence: 0.62 - evidence: memory/2026-04-18.md:242-244 [score=0.845 recalls=0 avg=0.620 source=memory/2026-04-19.md:18-20]
+
+## Promoted From Short-Term Memory (2026-04-28)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-04-22.md:237:239 -->
+- - Candidate: Possible Lasting Truths: Possible Lasting Truths: Assistant: [[reply_to_current]] Hey Dave — OpenClaw update available: **2026.4.5 → 2026.4.12**. Run `openclaw update` whenever you're ready to apply it. 🦉 [confidence=0.49 evidence=memory/.dreams/session-corpus/2026-04-14.txt:2-2 - confidence: 0.62 - evidence: memory/2026-04-21.md:217-219 [score=0.879 recalls=0 avg=0.620 source=memory/2026-04-22.md:18-20]
