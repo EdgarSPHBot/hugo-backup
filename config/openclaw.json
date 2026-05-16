@@ -1,7 +1,7 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.5.12",
-    "lastTouchedAt": "2026-05-15T02:43:45.598Z"
+    "lastTouchedAt": "2026-05-15T20:26:21.825Z"
   },
   "wizard": {
     "lastRunAt": "2026-05-07T02:13:37.982Z",
@@ -38,7 +38,8 @@
       "maxConcurrent": 4,
       "subagents": {
         "maxConcurrent": 8
-      }
+      },
+      "reasoningDefault": "on"
     }
   },
   "tools": {
@@ -160,7 +161,10 @@
     "native": "auto",
     "nativeSkills": "auto",
     "restart": true,
-    "ownerDisplay": "raw"
+    "ownerDisplay": "raw",
+    "ownerAllowFrom": [
+      "slack:U0B0TBEQW7N"
+    ]
   },
   "session": {
     "dmScope": "per-channel-peer"
@@ -188,6 +192,25 @@
         "+16193708201"
       ],
       "groupPolicy": "allowlist"
+    },
+    "slack": {
+      "enabled": true,
+      "mode": "socket",
+      "appToken": {
+        "source": "env",
+        "provider": "default",
+        "id": "SLACK_APP_TOKEN"
+      },
+      "botToken": {
+        "source": "env",
+        "provider": "default",
+        "id": "SLACK_BOT_TOKEN"
+      },
+      "ackReaction": "eyes",
+      "typingReaction": "thinking_face",
+      "streaming": {
+        "mode": "partial"
+      }
     }
   },
   "gateway": {
@@ -244,6 +267,9 @@
         "enabled": true
       },
       "openai": {
+        "enabled": true
+      },
+      "slack": {
         "enabled": true
       }
     }
