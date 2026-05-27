@@ -1,11 +1,11 @@
 {
   "meta": {
-    "lastTouchedVersion": "2026.5.12",
-    "lastTouchedAt": "2026-05-15T20:26:21.825Z"
+    "lastTouchedVersion": "2026.5.22",
+    "lastTouchedAt": "2026-05-27T06:34:07.207Z"
   },
   "wizard": {
-    "lastRunAt": "2026-05-07T02:13:37.982Z",
-    "lastRunVersion": "2026.5.6",
+    "lastRunAt": "2026-05-27T06:30:31.348Z",
+    "lastRunVersion": "2026.5.22",
     "lastRunCommand": "doctor",
     "lastRunMode": "local"
   },
@@ -191,7 +191,16 @@
         "+16198469224",
         "+16193708201"
       ],
-      "groupPolicy": "allowlist"
+      "groupPolicy": "allowlist",
+      "groupAllowFrom": [
+        "+16198469224",
+        "+16193708201"
+      ],
+      "groups": {
+        "*": {
+          "requireMention": true
+        }
+      }
     },
     "slack": {
       "enabled": true,
@@ -271,8 +280,21 @@
       },
       "slack": {
         "enabled": true
+      },
+      "codex": {
+        "enabled": true
       }
-    }
+    },
+    "allow": [
+      "anthropic",
+      "brave",
+      "codex",
+      "imessage",
+      "memory-core",
+      "openai",
+      "slack"
+    ],
+    "bundledDiscovery": "compat"
   },
   "skills": {
     "entries": {
