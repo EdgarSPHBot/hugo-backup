@@ -26,6 +26,43 @@
 ## Behavior Notes
 - **iMessage etiquette:** Always acknowledge receipt of a message first before jumping into any work. Don't silently start executing tasks.
 
+## Models
+- For heavy/complex tasks, use `anthropic/claude-fable-5` (Dave's preference for extra power)
+- Code review: simple → `anthropic/claude-opus-4-8`, complex → `anthropic/claude-fable-5`
+
+## Anthropic Model Reference (as of 2026-07-22)
+### Current / Recommended
+- `claude-fable-5` — most capable, best for long-running agents ($10/$50 per MTok)
+- `claude-opus-4-8` — complex agentic coding + enterprise ($5/$25 per MTok)
+- `claude-sonnet-5` — best speed/intelligence balance ($3/$15, intro $2/$10 through 2026-08-31)
+- `claude-haiku-4-5` — fastest, near-frontier ($1/$5 per MTok)
+### Legacy (still available, consider migrating)
+- `claude-opus-4-7`, `claude-opus-4-6`, `claude-sonnet-4-6` (current default), `claude-sonnet-4-5`, `claude-opus-4-5`
+### Deprecated / Dead
+- `claude-sonnet-4-20250514` — NO LONGER EXISTS (caused cron failures)
+- `claude-opus-4-7` fallback also failed (model_not_found) — avoid as fallback
+
+## Claude Code Delegation
+- When working on CleoRx, delegate development work to Claude Code via the `claude` CLI on this Mac (David's Mac mini)
+- CleoRx is an Xcode/iOS app — it lives at ~/src/cleorx on this Mac, NOT on edgar
+- Verify Claude Code with `claude --version`
+- Claude Code also available on edgar for aegis_server work
+- Claude Code produces better code than OpenClaw writing directly — prefer delegating coding tasks to it
+- aegis_server is a mature codebase with a lot of agent history — especially important to use Claude Code there
+- My role: orchestrate, break down tasks, hand off to Claude Code, review results, coordinate across repos/specs
+
+## File Delivery for Erin
+- Erin communicates via Slack only — no Mac mini access
+- When Erin asks for a file, always upload it directly to her Slack DM using the Slack files API
+- Slack bot token has `files:write` confirmed working (tested 2026-07-21)
+- Erin's Slack user ID: `U0BHC4RPACR`
+- WebChat is a last resort only — not for Erin
+
+## Pending Maintenance
+- **OpenClaw update**: 2026.7.1 → 2026.7.1-2 (or 2026.7.2 pre-release) — defer to a good time; 2026.7.2 has cron + gateway recovery fixes worth getting
+- **Test cron jobs**: `morning-maintenance` and `daily-backup` both have error backlogs — do a forced test run to confirm they work after today's fixes
+- **Nightly gateway restart**: consider a 4 AM cron restart to address memory pressure (RSS hit 1.2 GB overnight)
+
 ## Notes
 
 ## LaunchAgent Fix (2026-02-26)
