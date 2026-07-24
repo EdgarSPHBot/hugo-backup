@@ -80,6 +80,11 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 - Also has: `hedis_2025_valuesets`, `amp_2025_valuesets`, `ltss_2025_valuesets`, `sh2025_cms_hcc`
 - Connect: `mongosh "mongodb://mongo-hedis.sph-cloud.net:27017/"`
 
+## SVG Generation & Conversion
+- Generate SVG via Gemini 3.1 Pro (`google/gemini-3.1-pro-preview`) — confirmed working 2026-07-23
+- Convert SVG → PNG: `~/.homebrew/bin/rsvg-convert -w 800 -h 800 input.svg -o output.png`
+- Chrome fallback: `/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --headless=new --screenshot=out.png --window-size=800,800 file://input.svg`
+
 Add whatever helps you do your job. This is your cheat sheet.
 
 ## Aegis Server (CleoRx Project)
