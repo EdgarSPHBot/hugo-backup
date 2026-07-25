@@ -103,3 +103,12 @@ After granting both, restart the gateway. Note: `imsg` is legacy — BlueBubbles
 
 <!-- openclaw-memory-promotion:memory:memory/2026-04-24.md:290:292 -->
 - - Candidate: Possible Lasting Truths: Possible Lasting Truths: Assistant: [[reply_to_current]] Hey Dave — OpenClaw update available: **2026.4.5 → 2026.4.12**. Run `openclaw update` whenever you're ready to apply it. 🦉 [confidence=0.49 evidence=memory/.dreams/session-corpus/2026-04-14.txt:2-2 - confidence: 0.62 - evidence: memory/2026-04-21.md:217-219 [score=0.926 recalls=0 avg=0.620 source=memory/2026-04-24.md:228-230]
+
+## Promoted From Short-Term Memory (2026-07-25)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-07-20.md:33:33 -->
+- Cron: watch-erin-message (10:33 PM): **Recommend:** Main session should disable/remove job `watch-erin-message` and instead check Erin's Slack DMs directly during next heartbeat [score=0.861 recalls=0 avg=0.620 source=memory/2026-07-20.md:33-33]
+<!-- openclaw-memory-promotion:memory:memory/2026-07-20.md:40:40 -->
+- Cron: watch-erin-message (11:33 PM): **Action needed at next heartbeat:** Check Erin's Slack DMs (U0BHC4RPACR), notify Dave if she messaged, and remove/disable job `watch-erin-message` [score=0.861 recalls=0 avg=0.620 source=memory/2026-07-20.md:40-40]
+<!-- openclaw-memory-promotion:memory:memory/2026-07-20.md:29:32 -->
+- Cron: watch-erin-message (10:33 PM): Ran again from isolated cron context — same restriction as all prior runs; Session visibility still restricted to own tree; cannot reach Erin's or Dave's Slack sessions; Job NOT removed — cannot confirm message status; **This job cannot function as designed from an isolated cron context** [score=0.861 recalls=0 avg=0.620 source=memory/2026-07-20.md:29-32]
