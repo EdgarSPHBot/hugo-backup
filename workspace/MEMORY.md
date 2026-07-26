@@ -84,21 +84,6 @@ Also added a bootstrapper plist (`ai.openclaw.gateway.bootstrap`) at `~/Library/
 2. **Automation** — approve Messages.app control in System Settings → Privacy & Security → Automation (this may prompt interactively; approve it)
 After granting both, restart the gateway. Note: `imsg` is legacy — BlueBubbles is the recommended iMessage connector going forward.
 
-## Promoted From Short-Term Memory (2026-04-26)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-04-19.md:172:174 -->
-- - Candidate: Possible Lasting Truths: User: Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK. When reading HEARTBEAT.md, use workspace file /Users/edgar/.openclaw/workspace - confidence: 0.62 - evidence: memory/2026-04-18.md:242-244 [score=0.845 recalls=0 avg=0.620 source=memory/2026-04-19.md:18-20]
-
-## Promoted From Short-Term Memory (2026-04-28)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-04-22.md:237:239 -->
-- - Candidate: Possible Lasting Truths: Possible Lasting Truths: Assistant: [[reply_to_current]] Hey Dave — OpenClaw update available: **2026.4.5 → 2026.4.12**. Run `openclaw update` whenever you're ready to apply it. 🦉 [confidence=0.49 evidence=memory/.dreams/session-corpus/2026-04-14.txt:2-2 - confidence: 0.62 - evidence: memory/2026-04-21.md:217-219 [score=0.879 recalls=0 avg=0.620 source=memory/2026-04-22.md:18-20]
-
-## Promoted From Short-Term Memory (2026-04-29)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-04-23.md:257:259 -->
-- - Candidate: Possible Lasting Truths: Possible Lasting Truths: Assistant: [[reply_to_current]] Hey Dave — OpenClaw update available: **2026.4.5 → 2026.4.12**. Run `openclaw update` whenever you're ready to apply it. 🦉 [confidence=0.49 evidence=memory/.dreams/session-corpus/2026-04-14.txt:2-2 - confidence: 0.62 - evidence: memory/2026-04-21.md:217-219 [score=0.879 recalls=0 avg=0.620 source=memory/2026-04-23.md:148-150]
-
 ## Promoted From Short-Term Memory (2026-05-01)
 
 <!-- openclaw-memory-promotion:memory:memory/2026-04-24.md:290:292 -->
@@ -112,3 +97,24 @@ After granting both, restart the gateway. Note: `imsg` is legacy — BlueBubbles
 - Cron: watch-erin-message (11:33 PM): **Action needed at next heartbeat:** Check Erin's Slack DMs (U0BHC4RPACR), notify Dave if she messaged, and remove/disable job `watch-erin-message` [score=0.861 recalls=0 avg=0.620 source=memory/2026-07-20.md:40-40]
 <!-- openclaw-memory-promotion:memory:memory/2026-07-20.md:29:32 -->
 - Cron: watch-erin-message (10:33 PM): Ran again from isolated cron context — same restriction as all prior runs; Session visibility still restricted to own tree; cannot reach Erin's or Dave's Slack sessions; Job NOT removed — cannot confirm message status; **This job cannot function as designed from an isolated cron context** [score=0.861 recalls=0 avg=0.620 source=memory/2026-07-20.md:29-32]
+
+## Promoted From Short-Term Memory (2026-07-26)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-07-20.md:22:25 -->
+- Cron: watch-erin-message (8:53 PM): Ran from isolated cron context; session visibility restricted to own tree; Could NOT access Erin's Slack DM session (U0BHC4RPACR) or Dave's Slack session; Could NOT send wake event (cron tool restricted to self-management only); Job NOT removed — unable to confirm Erin's message status [score=0.844 recalls=0 avg=0.620 source=memory/2026-07-20.md:22-25]
+<!-- openclaw-memory-promotion:memory:memory/2026-07-20.md:26:26 -->
+- Cron: watch-erin-message (8:53 PM): **Action needed:** Dave or main session should manually check Erin's Slack DMs and remove job `watch-erin-message` once confirmed [score=0.844 recalls=0 avg=0.620 source=memory/2026-07-20.md:26-26]
+<!-- openclaw-memory-promotion:memory:memory/2026-07-20.md:36:39 -->
+- Cron: watch-erin-message (11:33 PM): Fifth consecutive failed run — isolated cron cannot access Erin's Slack DM session or Dave's session; Session visibility locked to own tree (tree-restricted); all external session reads forbidden; Job NOT removed; cannot confirm whether Erin has messaged; **Persistent issue:** This job has never been able to function. Main session must handle this manually. [score=0.844 recalls=0 avg=0.620 source=memory/2026-07-20.md:36-39]
+<!-- openclaw-memory-promotion:memory:memory/2026-07-20.md:12:12 -->
+- watch-erin-message cron (3:18 PM PDT): This note is for the main session to pick up at next heartbeat. [score=0.812 recalls=0 avg=0.620 source=memory/2026-07-20.md:12-12]
+<!-- openclaw-memory-promotion:memory:memory/2026-07-20.md:7:7 -->
+- watch-erin-message cron (3:18 PM PDT): **Action needed (main session):** [score=0.812 recalls=0 avg=0.620 source=memory/2026-07-20.md:7-7]
+<!-- openclaw-memory-promotion:memory:memory/2026-07-20.md:19:19 -->
+- watch-erin-message Cron Run (6:23 PM): **Action needed:** On next heartbeat, check if Erin (U0BHC4RPACR) has sent any DMs. If yes, notify Dave and remove cron job `watch-erin-message`. [score=0.812 recalls=0 avg=0.620 source=memory/2026-07-20.md:19-19]
+<!-- openclaw-memory-promotion:memory:memory/2026-07-20.md:15:18 -->
+- watch-erin-message Cron Run (6:23 PM): Cron job fired as scheduled; Could NOT check Erin's Slack messages: isolated cron context, session visibility restricted (tree mode); Could NOT send to Dave's Slack session: forbidden from isolated context; Could NOT wake main session: cron tool restricted to current job only [score=0.812 recalls=0 avg=0.620 source=memory/2026-07-20.md:15-18]
+<!-- openclaw-memory-promotion:memory:memory/2026-07-20.md:5:5 -->
+- watch-erin-message cron (3:18 PM PDT): The cron job `watch-erin-message` fired but couldn't check Erin's Slack DMs — session visibility is restricted to isolated cron tree. Could not reach `agent:main:slack:direct:U0BHC4RPACR` or notify Dave's main session. [score=0.812 recalls=0 avg=0.620 source=memory/2026-07-20.md:5-5]
+<!-- openclaw-memory-promotion:memory:memory/2026-07-20.md:8:10 -->
+- watch-erin-message cron (3:18 PM PDT): Check if Erin (Slack U0BHC4RPACR) has sent any new messages; If yes: notify Dave and remove cron job `watch-erin-message`; If no: leave cron job running [score=0.812 recalls=0 avg=0.620 source=memory/2026-07-20.md:8-10]
