@@ -1,12 +1,12 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.7.1",
-    "lastTouchedAt": "2026-07-17T06:12:34.451Z"
+    "lastTouchedAt": "2026-07-29T22:52:07.220Z"
   },
   "wizard": {
-    "lastRunAt": "2026-07-17T05:54:10.849Z",
+    "lastRunAt": "2026-07-29T22:52:07.191Z",
     "lastRunVersion": "2026.7.1",
-    "lastRunCommand": "doctor",
+    "lastRunCommand": "onboard",
     "lastRunMode": "local",
     "securityAcknowledgedAt": "2026-07-17T04:17:14.121Z"
   },
@@ -43,7 +43,10 @@
   },
   "tools": {
     "web": {
-      "search": {}
+      "search": {
+        "provider": "brave",
+        "enabled": true
+      }
     },
     "exec": {
       "security": "full"
@@ -118,6 +121,18 @@
         "auth": "api-key",
         "models": [
           {
+            "id": "gpt-5.6-luna",
+            "name": "GPT-5.6 Luna"
+          },
+          {
+            "id": "gpt-5.6-sol",
+            "name": "GPT-5.6 Sol"
+          },
+          {
+            "id": "gpt-5.6-terra",
+            "name": "GPT-5.6 Terra"
+          },
+          {
             "id": "gpt-5.5",
             "name": "GPT-5.5"
           },
@@ -134,18 +149,45 @@
             "name": "GPT-5.4 Pro"
           },
           {
+            "id": "gpt-5.4-mini",
+            "name": "GPT-5.4 Mini"
+          },
+          {
+            "id": "gpt-5.4-nano",
+            "name": "GPT-5.4 Nano"
+          },
+          {
+            "id": "gpt-5.3-chat-latest",
+            "name": "GPT-5.3 Chat"
+          },
+          {
+            "id": "gpt-5.3-codex",
+            "name": "GPT-5.3 Codex"
+          },
+          {
+            "id": "o1",
+            "name": "OpenAI o1",
+            "reasoning": true
+          },
+          {
+            "id": "o1-pro",
+            "name": "OpenAI o1 Pro",
+            "reasoning": true
+          },
+          {
             "id": "o3",
             "name": "OpenAI o3",
+            "reasoning": true
+          },
+          {
+            "id": "o3-mini",
+            "name": "OpenAI o3 Mini",
             "reasoning": true
           },
           {
             "id": "o4-mini",
             "name": "OpenAI o4-mini",
             "reasoning": true
-          },
-          {
-            "id": "gpt-4.1",
-            "name": "GPT-4.1"
           }
         ],
         "apiKey": "[REDACTED_API_KEY]"
@@ -153,6 +195,7 @@
       "google": {
         "api": "google-generative-ai",
         "apiKey": "[REDACTED_API_KEY]",
+        "baseUrl": "https://generativelanguage.googleapis.com",
         "models": [
           {
             "id": "gemini-3.1-pro-preview",
@@ -166,7 +209,7 @@
             "reasoning": true
           },
           {
-            "id": "gemini-3-pro-preview",
+            "id": "gemini-3.1-pro-preview",
             "name": "Gemini 3 Pro",
             "contextWindow": 1048576,
             "maxTokens": 65536,
