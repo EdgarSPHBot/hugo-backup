@@ -84,11 +84,6 @@ Also added a bootstrapper plist (`ai.openclaw.gateway.bootstrap`) at `~/Library/
 2. **Automation** — approve Messages.app control in System Settings → Privacy & Security → Automation (this may prompt interactively; approve it)
 After granting both, restart the gateway. Note: `imsg` is legacy — BlueBubbles is the recommended iMessage connector going forward.
 
-## Promoted From Short-Term Memory (2026-05-01)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-04-24.md:290:292 -->
-- - Candidate: Possible Lasting Truths: Possible Lasting Truths: Assistant: [[reply_to_current]] Hey Dave — OpenClaw update available: **2026.4.5 → 2026.4.12**. Run `openclaw update` whenever you're ready to apply it. 🦉 [confidence=0.49 evidence=memory/.dreams/session-corpus/2026-04-14.txt:2-2 - confidence: 0.62 - evidence: memory/2026-04-21.md:217-219 [score=0.926 recalls=0 avg=0.620 source=memory/2026-04-24.md:228-230]
-
 ## Promoted From Short-Term Memory (2026-07-25)
 
 <!-- openclaw-memory-promotion:memory:memory/2026-07-20.md:33:33 -->
@@ -118,3 +113,8 @@ After granting both, restart the gateway. Note: `imsg` is legacy — BlueBubbles
 - watch-erin-message cron (3:18 PM PDT): The cron job `watch-erin-message` fired but couldn't check Erin's Slack DMs — session visibility is restricted to isolated cron tree. Could not reach `agent:main:slack:direct:U0BHC4RPACR` or notify Dave's main session. [score=0.812 recalls=0 avg=0.620 source=memory/2026-07-20.md:5-5]
 <!-- openclaw-memory-promotion:memory:memory/2026-07-20.md:8:10 -->
 - watch-erin-message cron (3:18 PM PDT): Check if Erin (Slack U0BHC4RPACR) has sent any new messages; If yes: notify Dave and remove cron job `watch-erin-message`; If no: leave cron job running [score=0.812 recalls=0 avg=0.620 source=memory/2026-07-20.md:8-10]
+
+## Promoted From Short-Term Memory (2026-08-02)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-07-29.md:20:22 -->
+- Config Notes: OpenAI provider in `openclaw.json` has `baseUrl: https://api.openai.com/v1`; `organizationId` is NOT a valid OpenClaw config key for the OpenAI provider — do not use it; Org ID can be passed via curl header `OpenAI-Organization: <org-id>` for manual testing [score=0.806 recalls=0 avg=0.620 source=memory/2026-07-29.md:20-22]
