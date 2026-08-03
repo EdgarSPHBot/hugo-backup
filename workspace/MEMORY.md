@@ -84,15 +84,6 @@ Also added a bootstrapper plist (`ai.openclaw.gateway.bootstrap`) at `~/Library/
 2. **Automation** — approve Messages.app control in System Settings → Privacy & Security → Automation (this may prompt interactively; approve it)
 After granting both, restart the gateway. Note: `imsg` is legacy — BlueBubbles is the recommended iMessage connector going forward.
 
-## Promoted From Short-Term Memory (2026-07-25)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-07-20.md:33:33 -->
-- Cron: watch-erin-message (10:33 PM): **Recommend:** Main session should disable/remove job `watch-erin-message` and instead check Erin's Slack DMs directly during next heartbeat [score=0.861 recalls=0 avg=0.620 source=memory/2026-07-20.md:33-33]
-<!-- openclaw-memory-promotion:memory:memory/2026-07-20.md:40:40 -->
-- Cron: watch-erin-message (11:33 PM): **Action needed at next heartbeat:** Check Erin's Slack DMs (U0BHC4RPACR), notify Dave if she messaged, and remove/disable job `watch-erin-message` [score=0.861 recalls=0 avg=0.620 source=memory/2026-07-20.md:40-40]
-<!-- openclaw-memory-promotion:memory:memory/2026-07-20.md:29:32 -->
-- Cron: watch-erin-message (10:33 PM): Ran again from isolated cron context — same restriction as all prior runs; Session visibility still restricted to own tree; cannot reach Erin's or Dave's Slack sessions; Job NOT removed — cannot confirm message status; **This job cannot function as designed from an isolated cron context** [score=0.861 recalls=0 avg=0.620 source=memory/2026-07-20.md:29-32]
-
 ## Promoted From Short-Term Memory (2026-07-26)
 
 <!-- openclaw-memory-promotion:memory:memory/2026-07-20.md:22:25 -->
@@ -118,3 +109,10 @@ After granting both, restart the gateway. Note: `imsg` is legacy — BlueBubbles
 
 <!-- openclaw-memory-promotion:memory:memory/2026-07-29.md:20:22 -->
 - Config Notes: OpenAI provider in `openclaw.json` has `baseUrl: https://api.openai.com/v1`; `organizationId` is NOT a valid OpenClaw config key for the OpenAI provider — do not use it; Org ID can be passed via curl header `OpenAI-Organization: <org-id>` for manual testing [score=0.806 recalls=0 avg=0.620 source=memory/2026-07-29.md:20-22]
+
+## Promoted From Short-Term Memory (2026-08-03)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-07-29.md:6:9 -->
+- Google Image Gen Fix: Erin was seeing: `Image generation failed: Google Generative AI baseUrl must be a valid https URL on generativelanguage.googleapis.com`; Root cause: Google provider config was missing an explicit `baseUrl`, causing the SDK to receive a bare hostname without `https://` scheme; Fix: Added `"baseUrl": "https://generativelanguage.googleapis.com"` to the Google provider in `openclaw.json`, restarted gateway; Resolved ✅ [score=0.861 recalls=0 avg=0.620 source=memory/2026-07-29.md:6-9]
+<!-- openclaw-memory-promotion:memory:memory/2026-07-29.md:16:17 -->
+- OpenAI Billing Hard Limit: Eventually resolved after Dave adjusted billing limits on platform.openai.com; Confirmed working: OpenAI `gpt-image-1.5` generated a great horned owl image successfully ✅ [score=0.829 recalls=0 avg=0.620 source=memory/2026-07-29.md:16-17]
