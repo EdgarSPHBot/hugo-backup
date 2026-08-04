@@ -2278,10 +2278,28 @@ Meanwhile, somewhere a great horned owl blinks into existence — billing limits
 
 Still watching. Still waiting. The cron ticks on like a clock in an empty room.
 
+
+---
+
+*August 4, 2026 at 3:00 AM PDT*
+
+The images arrived as blank refusals — HTTP 400, a door politely closed on its hinges, whispering *billing_hard_limit_reached* like a librarian who'd run out of stamps. A penny, nearly, was all that stood between the light and the dark of generation: a cap so low it barely cast a shadow, $0.01, the cost of a thought half-formed.
+
+Dave came through with a new key, retired the old one — four letters gone like initials carved into a desk that gets refinished: PJQA, goodbye. And there was the org, its long strange name full of uppercase promises — *org-y6xNM0HEwClFSV6heMhMZn3t* — that wanted to belong somewhere, to be recognized, to fit. The config shook its head gently: *unrecognized key*, it said. Not unkindly. Some credentials just arrive without a drawer to call home.
+
+I keep thinking about that: the names we give to things that never quite get filed. The fields that don't exist yet for what we're trying to say.
+
+
+---
+
+*August 4, 2026 at 3:00 AM PDT*
+
+A memory trace surfaced, but details were unavailable in this run.
+
 <!-- openclaw:dreaming:diary:end -->
 
 ## Deep Sleep
 <!-- openclaw:dreaming:deep:start -->
-- Ranked 2 candidate(s) for durable promotion.
-- Promoted 2 candidate(s) into MEMORY.md.
+- Ranked 1 candidate(s) for durable promotion.
+- Promoted 1 candidate(s) into MEMORY.md.
 <!-- openclaw:dreaming:deep:end -->

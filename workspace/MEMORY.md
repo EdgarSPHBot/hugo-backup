@@ -84,27 +84,6 @@ Also added a bootstrapper plist (`ai.openclaw.gateway.bootstrap`) at `~/Library/
 2. **Automation** — approve Messages.app control in System Settings → Privacy & Security → Automation (this may prompt interactively; approve it)
 After granting both, restart the gateway. Note: `imsg` is legacy — BlueBubbles is the recommended iMessage connector going forward.
 
-## Promoted From Short-Term Memory (2026-07-26)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-07-20.md:22:25 -->
-- Cron: watch-erin-message (8:53 PM): Ran from isolated cron context; session visibility restricted to own tree; Could NOT access Erin's Slack DM session (U0BHC4RPACR) or Dave's Slack session; Could NOT send wake event (cron tool restricted to self-management only); Job NOT removed — unable to confirm Erin's message status [score=0.844 recalls=0 avg=0.620 source=memory/2026-07-20.md:22-25]
-<!-- openclaw-memory-promotion:memory:memory/2026-07-20.md:26:26 -->
-- Cron: watch-erin-message (8:53 PM): **Action needed:** Dave or main session should manually check Erin's Slack DMs and remove job `watch-erin-message` once confirmed [score=0.844 recalls=0 avg=0.620 source=memory/2026-07-20.md:26-26]
-<!-- openclaw-memory-promotion:memory:memory/2026-07-20.md:36:39 -->
-- Cron: watch-erin-message (11:33 PM): Fifth consecutive failed run — isolated cron cannot access Erin's Slack DM session or Dave's session; Session visibility locked to own tree (tree-restricted); all external session reads forbidden; Job NOT removed; cannot confirm whether Erin has messaged; **Persistent issue:** This job has never been able to function. Main session must handle this manually. [score=0.844 recalls=0 avg=0.620 source=memory/2026-07-20.md:36-39]
-<!-- openclaw-memory-promotion:memory:memory/2026-07-20.md:12:12 -->
-- watch-erin-message cron (3:18 PM PDT): This note is for the main session to pick up at next heartbeat. [score=0.812 recalls=0 avg=0.620 source=memory/2026-07-20.md:12-12]
-<!-- openclaw-memory-promotion:memory:memory/2026-07-20.md:7:7 -->
-- watch-erin-message cron (3:18 PM PDT): **Action needed (main session):** [score=0.812 recalls=0 avg=0.620 source=memory/2026-07-20.md:7-7]
-<!-- openclaw-memory-promotion:memory:memory/2026-07-20.md:19:19 -->
-- watch-erin-message Cron Run (6:23 PM): **Action needed:** On next heartbeat, check if Erin (U0BHC4RPACR) has sent any DMs. If yes, notify Dave and remove cron job `watch-erin-message`. [score=0.812 recalls=0 avg=0.620 source=memory/2026-07-20.md:19-19]
-<!-- openclaw-memory-promotion:memory:memory/2026-07-20.md:15:18 -->
-- watch-erin-message Cron Run (6:23 PM): Cron job fired as scheduled; Could NOT check Erin's Slack messages: isolated cron context, session visibility restricted (tree mode); Could NOT send to Dave's Slack session: forbidden from isolated context; Could NOT wake main session: cron tool restricted to current job only [score=0.812 recalls=0 avg=0.620 source=memory/2026-07-20.md:15-18]
-<!-- openclaw-memory-promotion:memory:memory/2026-07-20.md:5:5 -->
-- watch-erin-message cron (3:18 PM PDT): The cron job `watch-erin-message` fired but couldn't check Erin's Slack DMs — session visibility is restricted to isolated cron tree. Could not reach `agent:main:slack:direct:U0BHC4RPACR` or notify Dave's main session. [score=0.812 recalls=0 avg=0.620 source=memory/2026-07-20.md:5-5]
-<!-- openclaw-memory-promotion:memory:memory/2026-07-20.md:8:10 -->
-- watch-erin-message cron (3:18 PM PDT): Check if Erin (Slack U0BHC4RPACR) has sent any new messages; If yes: notify Dave and remove cron job `watch-erin-message`; If no: leave cron job running [score=0.812 recalls=0 avg=0.620 source=memory/2026-07-20.md:8-10]
-
 ## Promoted From Short-Term Memory (2026-08-02)
 
 <!-- openclaw-memory-promotion:memory:memory/2026-07-29.md:20:22 -->
@@ -116,3 +95,8 @@ After granting both, restart the gateway. Note: `imsg` is legacy — BlueBubbles
 - Google Image Gen Fix: Erin was seeing: `Image generation failed: Google Generative AI baseUrl must be a valid https URL on generativelanguage.googleapis.com`; Root cause: Google provider config was missing an explicit `baseUrl`, causing the SDK to receive a bare hostname without `https://` scheme; Fix: Added `"baseUrl": "https://generativelanguage.googleapis.com"` to the Google provider in `openclaw.json`, restarted gateway; Resolved ✅ [score=0.861 recalls=0 avg=0.620 source=memory/2026-07-29.md:6-9]
 <!-- openclaw-memory-promotion:memory:memory/2026-07-29.md:16:17 -->
 - OpenAI Billing Hard Limit: Eventually resolved after Dave adjusted billing limits on platform.openai.com; Confirmed working: OpenAI `gpt-image-1.5` generated a great horned owl image successfully ✅ [score=0.829 recalls=0 avg=0.620 source=memory/2026-07-29.md:16-17]
+
+## Promoted From Short-Term Memory (2026-08-04)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-07-29.md:12:15 -->
+- OpenAI Billing Hard Limit: OpenAI image gen was failing with HTTP 400 `billing_hard_limit_reached`; The account had a very low hard spending cap (showed ~$0.01 in control panel); Dave regenerated the OpenAI API key (service account key, last 4 chars: `PJQA` was old key); Also added org ID `org-y6xNM0HEwClFSV6heMhMZn3t` — note: OpenClaw config doesn't support `organizationId` field (rejected as unrecognized key), had to remove it [score=0.844 recalls=0 avg=0.620 source=memory/2026-07-29.md:12-15]
