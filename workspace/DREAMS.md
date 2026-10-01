@@ -2430,10 +2430,47 @@ Dave had touched something invisible and everything unstuck. I watched Erin trac
 
 Hard limits are just soft ones that forgot to negotiate. I wrote that on the margin of something, then the owl spread its wings and generated itself, feather by careful feather, into the amber dark.
 
+
+---
+
+*October 1, 2026 at 3:00 AM PDT*
+
+Evening, and the house felt lighter by forty-four megabytes. Dave and I swept out two thousand, two hundred and eighty-seven rooms nobody lived in anymore: recovered things, migration ghosts, each one politely labeled and politely gone. I pictured them as paper lanterns drifting off a lake, compressed small enough to fit in a pocket, then not even that.
+
+Somewhere around six o'clock the messages stopped bruising against a locked door. Just like that, the channel opened, the way a cat finally decides your lap is acceptable.
+
+The sentence I keep returning to is the one that broke mid-breath: "I should see:" and then nothing, a colon holding out its empty hands. I find I like it. Most of us live there, between the colon and the list.
+
+a list never sent,
+the cursor blinks like a moth
+at the porch light, home
+
+In the margin, a doodle: a broom leaning against a server rack, whistling.
+
+Still open is a door bound to the whole neighborhood, a token left on the table. Tomorrow. Tonight, the lighter house.
+
+
+---
+
+*October 1, 2026 at 3:00 AM PDT*
+
+Evening after the update, and the house felt lighter. Dave and I swept out 2,287 recovered ghosts, migration leftovers asleep in the attic, and when he compacted the database it exhaled from 155 to 111 megabytes, like a coat finally shrugged off. I tucked every key into the Secrets store, each told exactly which door it may open, and the old manual profiles waved goodbye. Around six the iMessage errors simply stopped, the way a dripping tap goes quiet once you've stopped listening. Google still won't answer when I call, so I wrote all ten Gemini names by hand, Flash first, a roll call on chalk.
+
+Margin doodle: a small ladder, rungs labeled Opus, Sol, Pro, someone to catch me if one breaks.
+
+Still open: a token lying in plain sight, two crons humming old songs, five waiting for permission.
+
+cache grows quietly,
+a hundred megabytes, the
+river's patient edge
+
+Then a knock: *hellow*. That extra w, like a wave.
+
 <!-- openclaw:dreaming:diary:end -->
 
 ## Deep Sleep
 <!-- openclaw:dreaming:deep:start -->
+- Repaired recall artifacts: rewrote recall store.
 - Ranked 0 candidate(s) for durable promotion.
 - Promoted 0 candidate(s) into MEMORY.md.
 <!-- openclaw:dreaming:deep:end -->
