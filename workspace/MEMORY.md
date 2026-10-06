@@ -82,7 +82,7 @@ Also added a bootstrapper plist (`ai.openclaw.gateway.bootstrap`) at `~/Library/
 **iMessage fix (updated 2026-04-02):** Two permissions required when node version changes:
 1. **Full Disk Access** — add `/Users/edgar/.nvm/versions/node/<version>/bin/node` in System Settings → Privacy & Security → Full Disk Access
 2. **Automation** — approve Messages.app control in System Settings → Privacy & Security → Automation (this may prompt interactively; approve it)
-After granting both, restart the gateway. Note: `imsg` is legacy — BlueBubbles is the recommended iMessage connector going forward.
+After granting both, restart the gateway. **2026-10-01:** inbound iMessage worked but replies silently hung (conversations.send timed out) until Dave restarted OpenClaw and clicked Allow on a pending macOS popup (Messages.app control) on the Mac mini — if iMessage replies stall, check for that popup first. Note: `imsg` is legacy — BlueBubbles is the recommended iMessage connector going forward.
 
 ## Promoted From Short-Term Memory (2026-08-02)
 
