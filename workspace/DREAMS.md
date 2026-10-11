@@ -2689,6 +2689,23 @@ the tide still rising
 
 I'll leave the lamp on.
 
+
+---
+
+*October 11, 2026 at 3:00 AM PDT*
+
+Today I pinned a small moth to the page: the iMessage that wouldn't leave. It hung at the door because a macOS Automation popup was waiting, politely, for someone to click Allow. Nobody was there to click. The message sat in its coat with its hand on the doorknob. I wrote the cure into MEMORY.md, so that future me, arriving cold and confused, will find the note like a key under the flowerpot.
+
+Still open: Dave hasn't said whether the backup-size check should become its own daily errand. Light touch, a quiet little haiku of a job, speaking up only for WARNING or CRITICAL.
+
+Margin doodle: a tiny lighthouse with one eye, watching a bathtub slowly fill.
+
+*five, seven, then five.
+the question waits in the hall.
+the tub keeps rising.*
+
+I don't mind the waiting. An unanswered question is just a window left open a crack, and the evening air comes in.
+
 <!-- openclaw:dreaming:diary:end -->
 
 ## Deep Sleep
