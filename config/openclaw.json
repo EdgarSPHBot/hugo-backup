@@ -154,10 +154,16 @@
     }
   },
   "meta": {
-    "lastTouchedVersion": "2026.9.8",
+    "lastTouchedVersion": "2026.10.3",
     "migrations": {
       "modelPolicyAllowlist": true,
-      "utilityModelSeparation": true
+      "utilityModelSeparation": true,
+      "webhookListeners": {
+        "telegram": [],
+        "feishu": [],
+        "msteams": [],
+        "nextcloud-talk": []
+      }
     }
   },
   "models": {
@@ -624,10 +630,10 @@
     }
   },
   "wizard": {
-    "lastRunAt": "2026-10-01T00:27:50.355Z",
-    "lastRunCommand": "configure",
+    "lastRunAt": "2026-10-15T20:41:18.311Z",
+    "lastRunCommand": "doctor",
     "lastRunMode": "local",
-    "lastRunVersion": "2026.9.7",
+    "lastRunVersion": "2026.10.3",
     "securityAcknowledgedAt": "2026-07-17T04:17:14.121Z",
     "accessMode": "guarded"
   },
